@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#040302" />
+    <meta name="description" content="Jota’s: hambúrgueres artesanais na brasa, luz baixa e boas conversas. Explore nosso cardápio sazonal e solicite sua reserva." />
+    <meta name="keywords" content="Jota’s, hamburgueria, hambúrguer artesanal, cardápio, reservas" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Jota’s Hamburgueria" />
+    <meta property="og:title" content="Jota’s — A brasa escreve a noite" />
+    <meta property="og:description" content="Hambúrgueres artesanais, acompanhamentos para dividir e sobremesas para ficar mais um pouco." />
+    <meta property="og:image" content="images/jotas-hero.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Jota’s — A brasa escreve a noite" />
+    <meta name="twitter:description" content="Hambúrgueres artesanais, acompanhamentos para dividir e sobremesas para ficar mais um pouco." />
+    <meta name="twitter:image" content="images/jotas-hero.webp" />
+    <title>Jota’s — A brasa escreve a noite</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="preload" as="image" href="images/jotas-hero.webp" fetchpriority="high" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="root">
+      <a href="#conteudo" class="skip-link">Ir para o conteúdo</a>
+      
+      <!-- SITE HEADER -->
+      <header class="site-header" id="site-header">
+        <div class="header-inner">
+          <a href="#inicio" class="wordmark" aria-label="Jota’s — início">
+            <span>JOTA</span><span class="wordmark-apostrophe">’</span><span>S</span><span class="wordmark-dot" aria-hidden="true">✦</span>
+          </a>
+          
+          <nav class="desktop-nav" aria-label="Navegação principal">
+            <a href="#cardapio"><span class="nav-index">01</span>Cardápio</a>
+            <a href="#experiencia"><span class="nav-index">02</span>A casa</a>
+            <a href="#localizacao"><span class="nav-index">03</span>Visite-nos</a>
+          </nav>
+          
+          <a href="#reservas" class="button button-outline header-reserve">
+            Reserve sua mesa
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true">
+              <path d="M7 7h10v10"></path>
+              <path d="M7 17 17 7"></path>
+            </svg>
+          </a>
+          
+          <button type="button" class="mobile-toggle" id="mobile-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-nav">
+            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu" aria-hidden="true">
+              <line x1="4" x2="20" y1="12" y2="12"></line>
+              <line x1="4" x2="20" y1="6" y2="6"></line>
+              <line x1="4" x2="20" y1="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+        
+        <!-- MOBILE NAVIGATION -->
+        <nav id="mobile-nav" class="mobile-nav" aria-label="Navegação móvel" hidden>
+          <a href="#cardapio">
+            <span><small>01</small> Cardápio</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+          </a>
+          <a href="#experiencia">
+            <span><small>02</small> A casa</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+          </a>
+          <a href="#localizacao">
+            <span><small>03</small> Visite-nos</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+          </a>
+          <a href="#reservas">
+            <span><small>04</small> Reserve sua mesa</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+          </a>
+        </nav>
+      </header>
+
+      <main id="conteudo">
+        <!-- HERO SECTION -->
+        <section id="inicio" class="hero" aria-labelledby="hero-heading">
+          <img class="hero-background" src="images/jotas-hero.webp" alt="Imagem ilustrativa de hambúrguer artesanal na brasa, servido à luz de velas" fetchpriority="high" width="1920" height="1080" />
+          <div class="hero-shade"></div>
+          
+          <div class="hero-content section-shell">
+            <p class="eyebrow hero-eyebrow"><span class="tiny-line"></span> JOTA’S · COZINHA NOTURNA</p>
+            <span class="hero-edition">A CASA DE BRASA <span>— Nº 01</span></span>
+            <h1 id="hero-heading">A brasa<br /><em>escreve a noite.</em></h1>
+            <p class="hero-description">Hambúrgueres artesanais, acompanhamentos para dividir e sobremesas para ficar mais um pouco.</p>
+            
+            <div class="hero-actions">
+              <a href="#cardapio" class="button button-primary">
+                Descobrir o cardápio
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true">
+                  <path d="M7 7h10v10"></path>
+                  <path d="M7 17 17 7"></path>
+                </svg>
+              </a>
+              <a href="#reservas" class="hero-text-link">
+                Reservar uma mesa <span></span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true">
+                  <path d="M7 7h10v10"></path>
+                  <path d="M7 17 17 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          
+          <div class="hero-stamp" aria-hidden="true">
+            <span class="hero-stamp-index">J.01</span>
+            <span class="hero-stamp-line"></span>
+            <span class="hero-stamp-caption">NA BRASA<br /><em>SEM PRESSA</em></span>
+          </div>
+          
+          <div class="hero-bottom section-shell">
+            <span class="hero-bottom-note"><span class="status-light"></span> INGREDIENTES DE VERDADE · FEITO À MÃO</span>
+            <a href="#cardapio" class="scroll-hint">
+              <span>DESÇA PARA DESCOBRIR</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-down" aria-hidden="true">
+                <path d="M12 5v14"></path>
+                <path d="m19 12-7 7-7-7"></path>
+              </svg>
+            </a>
+            <span class="hero-craft">
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-flame" aria-hidden="true">
+                <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path>
+              </svg>
+              <span>Feito com tempo.<br /><em>Servido à mesa.</em></span>
+            </span>
+          </div>
+        </section>
+
+        <!-- BRAND RIBBON -->
+        <div class="brand-ribbon" aria-label="A essência da Jota’s">
+          <span>BRASA VIVA</span>
+          <span class="ribbon-star">✦</span>
+          <span>INGREDIENTES DE VERDADE</span>
+          <span class="ribbon-star">✦</span>
+          <span>SEM PRESSA, SEM ATALHOS</span>
+          <span class="ribbon-star">✦</span>
+          <span>UMA BOA NOITE COMEÇA À MESA</span>
+        </div>
+
+        <!-- MENU SECTION -->
+        <section id="cardapio" class="menu-section section-shell" aria-labelledby="menu-heading">
+          <div class="section-heading menu-heading">
+            <div>
+              <p class="eyebrow"><span class="tiny-line"></span> A SELEÇÃO DA CASA</p>
+              <h2 id="menu-heading">Três capítulos.<br /><em>Uma só noite.</em></h2>
+            </div>
+            <div class="season-tag">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-leaf" aria-hidden="true">
+                <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
+                <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+              </svg>
+              CARDÁPIO SAZONAL
+            </div>
+          </div>
+          
+          <div class="menu-tabs" role="tablist" aria-label="Categorias do cardápio">
+            <button id="tab-burgers" type="button" role="tab" aria-selected="true" aria-controls="panel-burgers" tabindex="0" class="menu-tab active">
+              <span class="tab-number">01</span>Hambúrgueres
+            </button>
+            <button id="tab-sides" type="button" role="tab" aria-selected="false" aria-controls="panel-sides" tabindex="-1" class="menu-tab">
+              <span class="tab-number">02</span>Acompanhamentos
+            </button>
+            <button id="tab-desserts" type="button" role="tab" aria-selected="false" aria-controls="panel-desserts" tabindex="-1" class="menu-tab">
+              <span class="tab-number">03</span>Sobremesas
+            </button>
+          </div>
+          
+          <div id="menu-content-container">
+            <!-- Dynamically populated or rendered tab panels -->
+          </div>
+          
+          <p class="demo-note">Uma prévia dos nossos sabores. Itens e preços demonstrativos; o cardápio oficial será atualizado aqui. Imagens ilustrativas.</p>
+        </section>
+
+        <!-- EXPERIENCE SECTION -->
+        <section id="experiencia" class="experience-section section-shell" aria-labelledby="experience-heading">
+          <div class="experience-copy">
+            <p class="eyebrow"><span class="tiny-line"></span> O SABOR EM CAMADAS</p>
+            <h2 id="experience-heading">Fogo alto.<br /><em>Tempo de sobra.</em></h2>
+            <p>Na Jota’s, a primeira mordida é só o começo. O pão tostado, o blend na chapa e o molho da casa encontram seu próprio ritmo.</p>
+            <p>Uma cozinha de luz baixa, conversa boa e detalhes feitos para a noite durar um pouco mais.</p>
+            
+            <div class="flavor-profile" aria-label="Perfil demonstrativo do Jota’s Original">
+              <div class="profile-heading">
+                <span>JOTA’S ORIGINAL</span>
+                <span>PERFIL DA CASA</span>
+              </div>
+              <div class="profile-notes">
+                <span><b>01</b> Crosta na brasa</span>
+                <span><b>02</b> Cheddar cremoso</span>
+                <span><b>03</b> Cebola caramelizada</span>
+                <span><b>04</b> Molho da casa</span>
+              </div>
+            </div>
+            
+            <a href="#reservas" class="underlined-link">
+              Sua próxima boa noite
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true">
+                <path d="M7 7h10v10"></path>
+                <path d="M7 17 17 7"></path>
+              </svg>
+            </a>
+            
+            <div class="experience-signature">
+              Da nossa casa, para a sua noite.
+              <span>JOTA’S HAMBURGUERIA</span>
+            </div>
+          </div>
+          
+          <figure class="experience-photo">
+            <img src="images/jotas-atmosphere.webp" alt="Imagem conceitual de um salão intimista com madeira escura e luz âmbar" loading="lazy" width="1920" height="1440" />
+            <figcaption><span class="figure-line"></span> UM LUGAR FEITO PARA FICAR.</figcaption>
+            <div class="experience-image-label">
+              <span>BOA COMIDA.</span>
+              <span>NOITE SEM PRESSA.</span>
+            </div>
+          </figure>
+        </section>
+
+        <!-- LOCATION SECTION -->
+        <section id="localizacao" class="visit-section section-shell" aria-labelledby="visit-heading">
+          <div class="visit-heading">
+            <p class="eyebrow"><span class="tiny-line"></span> A GENTE SE ENCONTRA AQUI</p>
+            <h2 id="visit-heading">Sua mesa está <em>por aqui.</em></h2>
+          </div>
+          
+          <div class="visit-details">
+            <div class="hours-block">
+              <span class="section-index">01 / QUANDO VIR</span>
+              <h3>Horários da casa</h3>
+              <dl class="hours-list">
+                <div>
+                  <dt>Terça a quinta</dt>
+                  <dd>18h — 23h</dd>
+                </div>
+                <div>
+                  <dt>Sexta e sábado</dt>
+                  <dd>18h — 00h</dd>
+                </div>
+                <div>
+                  <dt>Domingo</dt>
+                  <dd>18h — 22h</dd>
+                </div>
+                <div class="closed-day">
+                  <dt>Segunda-feira</dt>
+                  <dd>Descanso da equipe</dd>
+                </div>
+              </dl>
+              <p class="small-note">Horários sugeridos para esta demonstração.<br />A última reserva é uma hora antes do fechamento.</p>
+            </div>
+            
+            <div class="location-block">
+              <span class="section-index">02 / ONDE FICAR</span>
+              <h3>Nosso endereço</h3>
+              <div class="address-line">
+                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin" aria-hidden="true">
+                  <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <div>
+                  <strong>Jota’s · Brasil</strong>
+                  <p>Endereço completo a informar.</p>
+                </div>
+              </div>
+              <p class="location-copy">Um cantinho para boas noites. Assim que o endereço oficial estiver disponível, você encontrará aqui a localização e as orientações para chegar.</p>
+              <span class="location-status"><span></span> LOCALIZAÇÃO EM BREVE</span>
+            </div>
+            
+            <div class="visit-aside">
+              <span class="aside-spark">✦</span>
+              <p>O melhor<br />da noite<br />é <em>à mesa.</em></p>
+              <span>JOTA’S — HAMBURGUERIA</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- RESERVATION SECTION -->
+        <section id="reservas" class="reservation-section section-shell" aria-labelledby="reservation-heading">
+          <div class="reservation-copy">
+            <p class="eyebrow"><span class="tiny-line"></span> GUARDE UM LUGAR PARA A NOITE</p>
+            <h2 id="reservation-heading">Uma mesa.<br /><em>Muitas histórias.</em></h2>
+            <p>Escolha o dia, traga a companhia.<br />Nós cuidamos do resto.</p>
+            <div class="reservation-details">
+              <span class="detail-mark">✦</span>
+              <p>De 1 a 8 pessoas por solicitação.<br />Reservas sujeitas à confirmação da casa.</p>
+            </div>
+          </div>
+          
+          <div id="reservation-form-container">
+            <form id="reservation-form" class="reservation-form" novalidate aria-label="Solicitar reserva na Jota’s">
+              <div class="form-heading">
+                <span>RESERVE UM MOMENTO ESPECIAL</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true">
+                  <path d="M7 7h10v10"></path>
+                  <path d="M7 17 17 7"></path>
+                </svg>
+              </div>
+              
+              <div class="form-row form-row-three">
+                <div class="form-field">
+                  <label for="reservation-date">Data</label>
+                  <input id="reservation-date" name="date" type="date" required aria-invalid="false" />
+                  <span id="error-date" class="field-error" role="alert" style="display: none;"></span>
+                </div>
+                
+                <div class="form-field">
+                  <label for="reservation-time">Horário</label>
+                  <select id="reservation-time" name="time" required disabled aria-invalid="false">
+                    <option value="" selected>Selecione a data</option>
+                  </select>
+                  <span id="error-time" class="field-error" role="alert" style="display: none;"></span>
+                </div>
+                
+                <div class="form-field">
+                  <label for="reservation-guests">Pessoas</label>
+                  <select id="reservation-guests" name="guests" required aria-invalid="false">
+                    <option value="1">1 pessoa</option>
+                    <option value="2" selected>2 pessoas</option>
+                    <option value="3">3 pessoas</option>
+                    <option value="4">4 pessoas</option>
+                    <option value="5">5 pessoas</option>
+                    <option value="6">6 pessoas</option>
+                    <option value="7">7 pessoas</option>
+                    <option value="8">8 pessoas</option>
+                  </select>
+                  <span id="error-guests" class="field-error" role="alert" style="display: none;"></span>
+                </div>
+              </div>
+              
+              <div class="form-row form-row-two">
+                <div class="form-field">
+                  <label for="reservation-name">Seu nome</label>
+                  <input id="reservation-name" name="name" type="text" placeholder="Como podemos chamar você?" autocomplete="name" maxlength="100" required aria-invalid="false" />
+                  <span id="error-name" class="field-error" role="alert" style="display: none;"></span>
+                </div>
+                
+                <div class="form-field">
+                  <label for="reservation-phone">Telefone / WhatsApp</label>
+                  <input id="reservation-phone" name="phone" type="tel" placeholder="(11) 99999-9999" autocomplete="tel" maxlength="22" required aria-invalid="false" />
+                  <span id="error-phone" class="field-error" role="alert" style="display: none;"></span>
+                </div>
+              </div>
+              
+              <div class="form-field notes-field">
+                <label for="reservation-notes">Algum detalhe especial? <span>(opcional)</span></label>
+                <textarea id="reservation-notes" name="notes" placeholder="Uma ocasião especial, uma preferência..." maxlength="500" rows="2" aria-invalid="false"></textarea>
+                <span id="error-notes" class="field-error" role="alert" style="display: none;"></span>
+              </div>
+              
+              <button class="button button-primary reservation-submit" type="submit" id="reservation-submit-btn">
+                Solicitar reserva
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right" aria-hidden="true">
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </button>
+              
+              <p class="form-privacy">Ao solicitar, você autoriza o uso destes dados apenas para tratar sua reserva. O envio não garante a disponibilidade de uma mesa.</p>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <!-- SITE FOOTER -->
+      <footer class="site-footer section-shell">
+        <div class="footer-top">
+          <div>
+            <a href="#inicio" class="wordmark wordmark-footer" aria-label="Jota’s — início">
+              <span>JOTA</span><span class="wordmark-apostrophe">’</span><span>S</span><span class="wordmark-dot" aria-hidden="true">✦</span>
+            </a>
+            <span class="footer-brand-caption">HAMBURGUERIA · FEITO COM ALMA</span>
+          </div>
+          <p>Um bom hambúrguer.<br /><em>Uma noite ainda melhor.</em></p>
+          <a href="#inicio" class="back-top" aria-label="Voltar ao início">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right">
+              <path d="M7 7h10v10"></path>
+              <path d="M7 17 17 7"></path>
+            </svg>
+          </a>
+        </div>
+        
+        <div class="footer-wordmark" aria-hidden="true">JOTA’S</div>
+        
+        <div class="footer-bottom">
+          <span>© <span id="current-year">2026</span> Jota’s. Todos os direitos reservados.</span>
+          <span>DO BRASIL, COM SABOR.</span>
+          <a href="#reservas">
+            Nos vemos à mesa
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true">
+              <path d="M7 7h10v10"></path>
+              <path d="M7 17 17 7"></path>
+            </svg>
+          </a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
